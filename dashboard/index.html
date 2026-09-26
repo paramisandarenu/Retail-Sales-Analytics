@@ -4,11 +4,89 @@
         <meta charset="ÜTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Retail Sales Analytics Dashboard</title>
+        <link rel = "stylesheet" href = "style.css">
     </head>
 
     <body>
-        <h1>Retail Sales Analytics</h1>
-        <p>Sales performance dashboard</p>
-    
-    </body>
+
+    <header class="dashboard-header">
+
+        <div>
+            <h1>Retail Sales Analytics</h1>
+            <p>Business Performance Dashboard</p>
+        </div>
+
+        <div class="header-date">
+            2025 - 2026
+        </div>
+
+    </header>
+
+
+    <main class="dashboard-container">
+
+        <!-- KPI Cards -->
+
+        <section class="kpi-section">
+
+            <div class="kpi-card">
+                <h3>Total Revenue</h3>
+                <p id="totalRevenue">LKR 168.99M</p>
+            </div>
+
+            <div class="kpi-card">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">3,000</p>
+            </div>
+
+            <div class="kpi-card">
+                <h3>Average Order Value</h3>
+                <p id="averageOrder">LKR 56,330</p>
+            </div>
+
+            <div class="kpi-card">
+                <h3>Total Quantity Sold</h3>
+                <p id="totalQuantity">—</p>
+            </div>
+
+        </section>
+
+
+        <!-- Charts -->
+
+        <section class="chart-grid">
+
+            <div class="chart-card">
+                <h2>Monthly Sales Trend</h2>
+
+                <canvas id="monthlySalesChart"></canvas>
+            </div>
+
+
+            <div class="chart-card">
+                <h2>Sales by Category</h2>
+
+                <canvas id="categorySalesChart"></canvas>
+            </div>
+
+
+            <div class="chart-card">
+                <h2>Sales by City</h2>
+
+                <canvas id="citySalesChart"></canvas>
+            </div>
+
+
+            <div class="chart-card">
+                <h2>Top 10 Products</h2>
+
+                <canvas id="topProductsChart"></canvas>
+            </div>
+
+        </section>
+
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="dashboard.js"></script>
+</body>
 </html>
